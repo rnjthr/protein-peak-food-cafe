@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="800" height="800">
+  <defs>
+    <!-- Mountain gradient -->
+    <linearGradient id="mtnGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E56717" />
+      <stop offset="55%" stop-color="#A64B14" />
+      <stop offset="100%" stop-color="#52260C" />
+    </linearGradient>
+    <!-- Leaf gradient -->
+    <linearGradient id="leafGrad" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#87B838" />
+      <stop offset="55%" stop-color="#4A8B2C" />
+      <stop offset="100%" stop-color="#1E5A28" />
+    </linearGradient>
+    <!-- Badge drop shadow -->
+    <filter id="badgeShadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000000" flood-opacity="0.12" />
+    </filter>
+  </defs>
+
+  <!-- Outer Cream Circular Emblem (Transparent outside) -->
+  <circle cx="400" cy="400" r="388" fill="#FAF7EE" stroke="#E5DEC9" stroke-width="4" filter="url(#badgeShadow)" />
+  <circle cx="400" cy="400" r="356" fill="none" stroke="#E5DEC9" stroke-width="2.5" />
+
+  <!-- Emblem Mark: Mountain & Leaf -->
+  <g transform="translate(0, -18)">
+    <!-- Mountain Peaks -->
+    <path d="M 326 435 
+             C 262 395, 255 315, 295 250 
+             L 335 182 
+             L 354 218 
+             L 396 136 
+             L 444 218 
+             L 466 192 
+             L 502 248 
+             C 514 268, 514 282, 495 294 
+             C 458 318, 392 315, 355 348 
+             C 324 375, 322 412, 336 435 Z" fill="url(#mtnGrad)" />
+
+    <!-- Snow Caps / Ridge Highlights -->
+    <path d="M 396 136 L 372 195 L 385 212 L 396 196 L 408 214 L 396 248 L 414 232 L 396 136 Z" fill="#FAF7EE" />
+    <path d="M 335 182 L 312 232 L 328 222 L 338 242 L 352 218 L 335 182 Z" fill="#FAF7EE" />
+    <path d="M 466 192 L 452 226 L 468 242 L 462 214 L 466 192 Z" fill="#FAF7EE" />
+
+    <!-- Swooping Green Leaf -->
+    <path d="M 334 446 
+             C 326 392, 358 342, 422 325 
+             C 476 310, 508 292, 518 265 
+             C 548 318, 535 395, 476 438 
+             C 430 472, 368 468, 334 446 Z" fill="url(#leafGrad)" />
+
+    <!-- Leaf Inner Veins -->
+    <path d="M 358 438 Q 435 425 495 342 Q 445 438 358 438 Z" fill="#FAF7EE" opacity="0.9" />
+    <path d="M 412 418 Q 422 385 415 362 Q 430 385 418 418 Z" fill="#FAF7EE" opacity="0.9" />
+    <path d="M 368 388 C 392 355, 442 342, 485 322 C 442 348, 395 362, 368 388 Z" fill="#FAF7EE" opacity="0.55" />
+  </g>
+
+  <!-- Brand Typography -->
+  <text x="400" y="535" text-anchor="middle" font-family="&#39;Montserrat&#39;, &#39;Arial Black&#39;, &#39;Helvetica Neue&#39;, sans-serif" font-weight="900" font-size="60" letter-spacing="2" fill="#321B0A">PROTEIN PEAK</text>
+  <text x="400" y="602" text-anchor="middle" font-family="&#39;Montserrat&#39;, &#39;Arial Black&#39;, &#39;Helvetica Neue&#39;, sans-serif" font-weight="900" font-size="60" letter-spacing="2" fill="#321B0A">CAFE</text>
+  <text x="400" y="646" text-anchor="middle" font-family="&#39;Montserrat&#39;, &#39;Helvetica Neue&#39;, Arial, sans-serif" font-weight="700" font-size="22.5" letter-spacing="1.8" fill="#321B0A">FUEL YOUR DAY NATURALLY</text>
+</svg>
